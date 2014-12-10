@@ -1,3 +1,7 @@
+/* Minesweeper            */
+/* by Brian Cottrell      */
+/* 10-04-2014             */
+
 /*VARIABLES*/
 var rows = 20;						//Sets number of rows on game board
 var columns = 20;					//Sets number of columns on game board
