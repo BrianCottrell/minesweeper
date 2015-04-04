@@ -1,7 +1,7 @@
 /* Minesweeper            */
 /* by Brian Cottrell      */
 /* 10-04-2014             */
-
+console.log('hello');
 /*VARIABLES*/
 var rows = 20;						//Sets number of rows on game board
 var columns = 20;					//Sets number of columns on game board
@@ -78,9 +78,10 @@ function selectBox(){
 		this.style.backgroundColor = '#'+minesNearby+'0'+(9-minesNearby)+'000';
 		originalColor = this.style.backgroundColor;
 	}
-	document.getElementsByTagName('p')[0].innerHTML = minesNearby;
+//	document.getElementsByTagName('p')[0].innerHTML = minesNearby;
 }
-function rightClick(){
+function rightClick(e){
+	e.preventDefault();
 	this.style.background = 'url(flag.png)';
 	this.style.backgroundSize = 'contain';
 }
